@@ -26,8 +26,9 @@ nav {
     align-items: center;
     padding: 15px;
     background-color: rgb(58, 50, 50);
-    width:100%;
+    width: 100%;
     overflow: auto;
+    min-height: 3vh;
 }
 
 ul {
@@ -60,10 +61,11 @@ ul {
 .navitems a {
     text-decoration: none;
     font-size: 14px;
-    display: block;
     padding: 10px 15px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    
 }
 
 .navitems li a {
@@ -72,17 +74,6 @@ ul {
 
 .navitems li a:hover {
     color: rgb(84, 236, 89);
-}
-
-.right-navitem {
-    justify-self: flex-end;
-}
-
-li, a, button {
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
 }
 
 .burger {
@@ -95,24 +86,29 @@ li, a, button {
     height: 3px;
     background-color: white;
     margin: 5px;
+    transition: all 0.3s ease;
 }
 
 @media only screen and (max-width: 935px) {
-    body {
-        overflow-x: hidden;
+    nav {
+        flex-direction: row-reverse;
     }
     .navitems {
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 94vh;
+        top: 6vh;
         background-color:  rgb(58, 50, 50);
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
+        z-index: 1;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+    }
+    .navitems li {
+        opacity: 0;
     }
     .burger {
         display: block;
@@ -122,6 +118,82 @@ li, a, button {
   .nav-active {
       transform: translateX(0%);
   }
+
+  @keyframes navLinkFade {
+      from {
+          opacity: 0;
+          transform: translateX(50px);
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0px);
+      }
+  }
+
+  .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .line2 {
+      opacity: 0;
+  }
+  .toggle .line3 {
+      transform: rotate(45deg) translate(-5px,-6px);
+  }
+
+/* language switcher */
+
+  .langswitcher {
+      display: flex;
+      align-items: center;
+  }
+
+  .check {
+      position: relative;
+      width:50px;
+  }
+
+  .check:before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        background: #fff;
+        border-radius: 20px;
+  }
+  
+  .check:checked:before{
+      background: #fff;
+  }
+
+  .check:after{
+    content: '';
+    position: absolute;
+    left:0;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 20px;
+    transition: 0.25s;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+ }
+
+ .check:checked:after{
+     left: 20px;
+     border: 2px solid #fff;
+
+ }
+
+ .ger, .en {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ }
+
+/* language switcher end */
 
 /* navigation bar end*/
 
@@ -280,6 +352,7 @@ footer{
     color:white;
     margin-top: auto;
     justify-content: center;
+    width: 100%;
 }
 
 /* footer end*/
