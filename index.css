@@ -149,7 +149,7 @@ ul {
 
   .check {
       position: relative;
-      width:50px;
+      width: 43px;
   }
 
   .check:before{
@@ -182,6 +182,14 @@ ul {
      left: 20px;
      border: 2px solid #fff;
 
+ }
+
+ .check:checked ~ .intro.text-ger {
+     display: none;
+ }
+
+ .check:checked ~ .intro.text-en {
+     display: block;
  }
 
  .ger, .en {
@@ -324,7 +332,25 @@ ul {
 
 /* intro text */
 
-.intro-text {
+.intro {
+    display: none;
+}
+
+.intro.text-ger{
+    display: block;
+}
+
+.intro.text-en {
+    margin-top: 60px;
+    width: 70%;
+    background-color: rgb(58, 50, 50);
+    color: white;
+    border-radius:10px 10px 10px 10px;
+    padding: 10px; 
+    margin-bottom: 60px; 
+}
+
+.intro.text-ger {
     margin-top: 60px;
     width: 70%;
     background-color: rgb(58, 50, 50);
