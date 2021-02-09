@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../index.css">
     <title>ForestWatcher</title>
+    <link rel="stylesheet" href="../index.css">
+    <link href="../jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../jqvmap/jquery.vmap.js"></script>
+    <script type="text/javascript" src="../jqvmap/jquery.vmap.germany.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container">
@@ -34,14 +38,13 @@
       </nav>
       <!-- navigation bar end-->
 
-      <!-- intro text -->
-      <div class="intro text-ger">
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-      </div>
-        <!-- intro text end -->
+    <!-- main -->
+      <!-- map -->
+      <div id="vmap"></div>
+      <!-- map end -->
     </div>
+    <!-- main end -->
+
     <!-- footer -->
     <footer>
       <div class="text">
@@ -50,5 +53,5 @@
     </footer>
     <!-- footer end -->
   </body>
-  <script language="javascript" type="text/javascript" src="../index.js"></script>
+  <script language="javascript" type="text/javascript" src="../jqvmap/jquery.vmap.edit.js"></script>
 </html>
