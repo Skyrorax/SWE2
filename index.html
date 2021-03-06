@@ -17,9 +17,40 @@
           </a>
         </div>
         <ul class="navitems">
-          <li><a href="general/general.html">Allgemeines</a></li>
-          <li><a href="projects/projects.html">Projekte</a></li>
-          <li><a href="countermeasures/countermeasures.html">Was kann ich tun?</a></li>
+          <div class="generalNavitem">
+            <li><a href="general/general.html">Allgemeines</a></li>
+            <div class="submenuGeneral">
+              <ul>
+                <li><a href="general/causes.html">Ursachen</a></li>
+                <li><a href="general/consequences.html">Konsequenzen</a></li>
+                <li><a href="general/statistics.html">Statistiken</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="projectsNavitem">
+            <li><a href="projects/projects.html">Projekte</a></li>
+            <div class="submenuProjects">
+              <ul>
+                <li><a href="projects/map.html">Karte</a></li>
+                <li><a href="projects/gruenheide.html">Grünheide</a></li>
+                <li><a href="projects/hambacherForst.html">Hambacher Forst</a></li>
+                <li><a href="projects/dannenröderForst.html">Dannenröder Forst</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="countermeasuresNavitem">
+            <li><a href="countermeasures/countermeasures.html">Gegenmaßnahmen</a></li>
+            <div class="submenuCountermeasures">
+              <ul>
+                <li><a href="countermeasures/whatCanIDo.html">Was kann ich tun?</a></li>
+                <li><a href="countermeasures/politicsEconomy.html">Politik/Wirtschaft</a></li>
+                <li><a href="countermeasures/projects.html">Projekte</a></li>
+              </ul>
+            </div>
+          </div>
+          
           <li class="langswitcher">
             <span class="ger">German</span>
             <input type="checkbox" class="check">
@@ -113,5 +144,6 @@
     <!-- footer end -->
   </body>
   <script language="javascript" type="text/javascript" src="index.js"></script>
+  <script language="javascript" type="text/javascript" src="nav-bar.js"></script>
 </html>
 
