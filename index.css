@@ -67,7 +67,6 @@ ul {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    
 }
 
 .navitems li a {
@@ -91,7 +90,7 @@ ul {
     transition: all 0.3s ease;
 }
 
-@media only screen and (max-width: 935px) {
+@media only screen and (max-width: 1000px) {
     nav {
         flex-direction: row-reverse;
     }
@@ -114,33 +113,106 @@ ul {
     }
     .burger {
         display: block;
+        margin-right: 20px;
     }
-  }
+}
 
-  .nav-active {
-      transform: translateX(0%);
-  }
+.nav-active {
+    transform: translateX(0%);
+}
 
-  @keyframes navLinkFade {
-      from {
-          opacity: 0;
-          transform: translateX(50px);
-      }
-      to {
-          opacity: 1;
-          transform: translateX(0px);
-      }
-  }
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
-  .toggle .line1 {
-      transform: rotate(-45deg) translate(-5px,6px);
-  }
-  .toggle .line2 {
-      opacity: 0;
-  }
-  .toggle .line3 {
-      transform: rotate(45deg) translate(-5px,-6px);
-  }
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* submenus for nav-bar */
+
+.navitems div div ul li{
+    width: 150px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.submenuGeneral {
+    display: none;
+}
+
+.generalNavitem:hover .submenuGeneral {
+    display: block;
+    position: absolute;
+    background: rgb(58, 50, 50);
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.generalNavitem:hover .submenuGeneral ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+.submenuProjects {
+    display: none;
+}
+
+.projectsNavitem:hover .submenuProjects {
+    display: block;
+    position: absolute;
+    background: rgb(58, 50, 50);
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.projectsNavitem:hover .submenuProjects ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.submenuCountermeasures {
+    display: none;
+}
+
+.countermeasuresNavitem:hover .submenuCountermeasures {
+    display: block;
+    position: absolute;
+    background: rgb(58, 50, 50);
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.countermeasuresNavitem:hover .submenuCountermeasures ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* submenus for nav-bar end*/
 
 /* language switcher */
 
