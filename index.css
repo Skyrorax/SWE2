@@ -600,9 +600,17 @@ nav ul ul ul li{
 /* intro text end */
 
 
+/* map */
+
+#map {
+    width: 100%;
+    height: 846px;
+}
+
+
 /* jqvmap */
 
-.jqvmap-label
+/*.jqvmap-label
 {
 	position: absolute;
 	display: none;
@@ -657,7 +665,7 @@ nav ul ul ul li{
 
 /* map pins */
 
-.map-pin {
+/*.map-pin {
     width: 64px;
     height: 50px;
     position: absolute;
