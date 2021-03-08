@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForestSaver</title>
     <link rel="stylesheet" href="../index.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="../jqvmap/jquery.vmap.js"></script>
-    <script type="text/javascript" src="../jqvmap/jquery.vmap.germany.js" charset="utf-8"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
     <div class="container">
@@ -39,11 +38,10 @@
 
     <!-- main -->
       <!-- map -->
-      <div id="vmap"></div>
+      <div id='map'></div>
       <!-- map end -->
     </div>
     <!-- main end -->
-
     <!-- footer -->
     <footer>
       <div class="text">
@@ -51,6 +49,6 @@
       </div>
     </footer>
     <!-- footer end -->
-    <script language="javascript" type="text/javascript" src="../jqvmap/jquery.vmap.edit.js"></script>
   </body>
+  <script language="javascript" type="text/javascript" src='../mapbox/mapbox.js'></script>
 </html>

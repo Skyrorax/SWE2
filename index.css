@@ -370,9 +370,17 @@ ul {
 /* intro text end */
 
 
+/* map */
+
+#map {
+    width: 100%;
+    height: 846px;
+}
+
+
 /* jqvmap */
 
-.jqvmap-label
+/*.jqvmap-label
 {
 	position: absolute;
 	display: none;
@@ -427,7 +435,7 @@ ul {
 
 /* map pins */
 
-.map-pin {
+/*.map-pin {
     width: 64px;
     height: 50px;
     position: absolute;
