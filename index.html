@@ -3,71 +3,75 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="burger.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>ForestSaver</title>
   </head>
   <body>
     <!-- header -->
-    <div class="container">
       <!-- navigation bar -->
       <nav>
         <div class="logo-div">
           <a href="../index.html">
-          <img class="logo" src="images/logo.png" alt="logo">
+            ForestSaver
+          <!--<img class="logo" src="images/logo.png" alt="logo">-->
           </a>
-        </div>
-        <ul class="navitems">
-          <div class="generalNavitem">
-            <li><a href="general/general.html">Allgemeines</a></li>
-            <div class="submenuGeneral">
-              <ul>
-                <li><a href="general/causes.html">Ursachen</a></li>
-                <li><a href="general/consequences.html">Konsequenzen</a></li>
-                <li><a href="general/statistics.html">Statistiken</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="projectsNavitem">
-            <li><a href="projects/projects.html">Projekte</a></li>
-            <div class="submenuProjects">
-              <ul>
-                <li><a href="projects/map.html">Karte</a></li>
-                <li><a href="projects/gruenheide.html">Grünheide</a></li>
-                <li><a href="projects/hambacherForst.html">Hambacher Forst</a></li>
-                <li><a href="projects/dannenröderForst.html">Dannenröder Forst</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="countermeasuresNavitem">
-            <li><a href="countermeasures/countermeasures.html">Gegenmaßnahmen</a></li>
-            <div class="submenuCountermeasures">
-              <ul>
-                <li><a href="countermeasures/whatCanIDo.html">Was kann ich tun?</a></li>
-                <li><a href="countermeasures/politicsEconomy.html">Politik/Wirtschaft</a></li>
-                <li><a href="countermeasures/projects.html">Projekte</a></li>
-              </ul>
-            </div>
-          </div>
           
+        </div>
+        <label for="btn" class="icon">
+          <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul class="navitems">
+          <li>
+            <label for="btn-1" class="show">Allgemeines +</label>
+            <a href="#">Allgemeines</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+              <li><a href="general/causes.html">Ursachen</a></li>
+              <li><a href="general/consequences.html">Konsequenzen</a></li>
+              <li><a href="general/statistics.html">Statistiken</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">Projekte +</label>
+            <a href="#">Projekte</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+              <li><a href="projects/map.html">Karte</a></li>
+              <li><a href="projects/gruenheide.html">Grünheide</a></li>
+              <li><a href="projects/hambacherForst.html">Hambacher Forst</a></li>
+              <li><a href="projects/dannenröderForst.html">Dannenröder Forst</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-3" class="show">Gegenmaßnahmen +</label>
+            <a href="#">Gegenmaßnahmen</a>
+            <input type="checkbox" id="btn-3">
+            <ul>
+              <li><a href="countermeasures/whatCanIDo.html">Was kann ich tun?</a></li>
+              <li><a href="countermeasures/politicsEconomy.html">Politik/Wirtschaft</a></li>
+              <li><a href="countermeasures/projects.html">Projekte</a></li>
+            </ul>
+          </li>
+          <!--
           <li class="langswitcher">
             <span class="ger">German</span>
             <input type="checkbox" class="check">
             <span class="en">English</span>
           </li>
-          <li><a href="contact/contact.html">Kontakt</a></li>
+          -->
+          <li>
+            <label class="show">Kontakt</label>
+            <a href="contact/contact.html">Kontakt</a>
+          </li>
         </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
       </nav>
       <!-- navigation bar end -->
     <!-- header end -->
       
     <!-- main -->
+    <div class="content">
       <!-- image slider -->
       <div class="slider">
         <div class="slides"> 
@@ -133,6 +137,11 @@
       </div>
       <!-- intro text end -->
     </div>
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+   </script>
     <!-- main end -->
 
     <!-- footer -->
@@ -144,6 +153,5 @@
     <!-- footer end -->
   </body>
   <script language="javascript" type="text/javascript" src="index.js"></script>
-  <script language="javascript" type="text/javascript" src="nav-bar.js"></script>
 </html>
 
