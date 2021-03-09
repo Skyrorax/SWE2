@@ -9,11 +9,6 @@ body{
     overflow-x: hidden;
 }
 
-/* header */
-
-/* navigation bar */
-
-
 *{
     margin: 0;
     padding: 0;
@@ -21,6 +16,8 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* background */
 
 .bg-img, .bg-img-causes, .bg-img-consequences, .bg-img-statistics {
     background-size: cover;
@@ -47,18 +44,23 @@ body{
     background: url(./images/statistics.jpg) 0 0 no-repeat fixed;
 }
 
+.overlay {
+    background: linear-gradient(to top, rgba(80, 207, 137, 0.466), rgba(16, 116, 33, 0.5));
+    position: absolute;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+/* background */
+
+/* navigation bar */
+
 .nav-container {
     position: absolute;
     width: 100%;
     z-index: 3;
 }
-
-.overlay {
-    background: linear-gradient(to top, rgba(80, 207, 137, 0.466), rgba(16, 116, 33, 0.5));
-    overflow-x: hidden;
-    height: 100%;
-}
-
 nav{
     background: transparent;
     position: absolute;
@@ -69,6 +71,9 @@ nav:after{
     content: '';
     clear: both;
     display: table;
+}
+#map-nav {
+    background-color: rgba(0,0,0,0.7);
 }
 nav .logo-div a{
     float: left;
@@ -121,6 +126,9 @@ nav ul ul{
     visibility: hidden;
     transition: top .3s;
 }
+#map-nav ul ul li{
+    background-color: rgba(0,0,0,0.7);
+}
 nav ul ul ul{
     border-top: none;
 }
@@ -135,7 +143,6 @@ nav ul ul li{
     width: 188px;
     float: none;
     display: list-item;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 nav ul ul li a{
     line-height: 50px;
@@ -154,7 +161,7 @@ nav ul ul ul li{
 }
 @media all and (max-width: 1000px) {
     nav {
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.7);
     }
     nav ul{
       margin-right: 0px;
@@ -292,8 +299,6 @@ language switcher end */
 
 /* navigation bar end*/
 
-/* header end */
-
 /* main */
 
 /* banner */
@@ -345,8 +350,8 @@ language switcher end */
 /* map */
 
 #map {
-    width: 100%;
-    height: 850px;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* map end */
@@ -372,26 +377,16 @@ language switcher end */
 
 /* footer */
 
-.bg-img footer {
+footer {
     position: absolute;
-    bottom: 0;
     margin: 0 auto;
+    bottom: 0;
     display: flex;
     padding: 10px;
     background-color: rgba(0,0,0,0.3);
     color:white;
     justify-content: center;
     width: 100%;
-}
-
-footer{
-    display: flex;
-    padding: 10px;
-    background-color: rgb(58, 50, 50);
-    color:white;
-    justify-content: center;
-    width: 100%;
-    z-index: 2;
 }
 
 /* footer end*/
