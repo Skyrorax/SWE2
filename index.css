@@ -22,8 +22,31 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.bg-img {
+    background: url(./images/wald-bg.jpg) 0 0 no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+.nav-container {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.overlay {
+    background: linear-gradient(to top, rgba(80, 207, 137, 0.466), rgba(16, 116, 33, 0.5));
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
 nav{
-    background: rgb(58, 50, 50);
+    background: transparent;
 }
 nav:after{
     content: '';
@@ -57,7 +80,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    background: rgb(58, 50, 50);
+    background: transparent;
     margin: 0 5px;
 }
 nav ul li a{
@@ -180,199 +203,8 @@ nav ul ul ul li{
       content: '\f00d';
     }
 }
-.content{
-    z-index: -1;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-}
 
-
-/*
-nav {
-    background: rgb(58, 50, 50);
-}
-
-nav:after{
-    content: '';
-    clear: both;
-    display: table;
-}
-
-nav .logo{
-    float: left;
-    color: white;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 70px;
-    padding-left: 60px;
-}
-
-nav ul {
-    float: right;
-    margin-right: 40px;
-    list-style: none;
-    position: relative;
-}
-
-nav ul li{
-    float: left;
-    display: inline-block;
-    background: rgb(58, 50, 50);
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: white;
-    line-height: 70px;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 15px;
-}
-
-nav ul li a:hover{
-    color: cyan;
-    border-radius: 5px;
-    box-shadow:  0 0 5px #33ffff,
-                 0 0 10px #66ffff;
-}
-
-nav ul ul li a:hover{
-    box-shadow: none;
-}
-
-nav ul ul{
-    position: absolute;
-    top: 90px;
-    border-top: 3px solid cyan;
-    opacity: 0;
-    visibility: hidden;
-    transition: top .3s;
-}
-
-nav ul ul ul{
-    border-top: none;
-}
-
-nav ul li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-}
-
-nav ul ul li{
-    position: relative;
-    margin: 0px;
-    width: 150px;
-    float: none;
-    display: list-item;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-}
-
-nav ul ul li a{
-    line-height: 50px;
-}
-
-nav ul ul ul li{
-    position: relative;
-    top: -60px;
-    left: 150px;
-}
-
-@media all and (max-width: 1000px) {
-    nav ul{
-      margin-right: 0px;
-      float: left;
-    }
-    nav .logo{
-      padding-left: 30px;
-      width: 100%;
-    }
-    .show + a, ul{
-      display: none;
-    }
-    nav ul li,nav ul ul li{
-      display: block;
-      width: 100%;
-    }
-    nav ul li a:hover{
-      box-shadow: none;
-    }
-    .show{
-      display: block;
-      color: white;
-      font-size: 18px;
-      padding: 0 20px;
-      line-height: 70px;
-      cursor: pointer;
-    }
-    .show:hover{
-      color: cyan;
-    }
-    .icon{
-      display: block;
-      color: white;
-      position: absolute;
-      top: 0;
-      right: 40px;
-      line-height: 70px;
-      cursor: pointer;
-      font-size: 25px;
-    }
-    nav ul ul{
-      top: 70px;
-      border-top: 0px;
-      float: none;
-      position: static;
-      display: none;
-      opacity: 1;
-      visibility: visible;
-    }
-    nav ul ul a{
-      padding-left: 40px;
-    }
-    nav ul ul ul a{
-      padding-left: 80px;
-    }
-    nav ul ul ul li{
-      position: static;
-    }
-    [id^=btn]:checked + ul{
-      display: block;
-    }
-    nav ul ul li{
-      border-bottom: 0px;
-    }
-    span.cancel:before{
-      content: '\f00d';
-    }
-}
-
-.content{
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-  }
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-*/
-/* language switcher */
+/* language switcher
 
 .langswitcher {
     display: flex;
@@ -433,7 +265,7 @@ nav ul ul ul li{
     text-align: center;
 }
 
-/* language switcher end */
+language switcher end */
 
 /* navigation bar end*/
 
@@ -441,268 +273,12 @@ nav ul ul ul li{
 
 /* main */
 
-/* slidebar */
-
-.slider{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 0px 0px 10px 10px;
-    border-style: solid;
-    border-width: 0px 10px 10px 10px;
-    border-color:  rgb(58, 50, 50);
-}
-
-.slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 20%;
-    transition: 2s;
-}
-
-.slide img{
-    width: 100%;
-    height: 100%; 
-}
-
-/* manual slidebar */
-
-.navigation-manual{
-    position: absolute;
-    width: 70%;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background: rgb(55, 245, 55);
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -60%;
-}
-
-#radio5:checked ~ .first{
-    margin-left: -80%;
-}
-
-/* slidebar automatic */
-
-.navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    margin-top: 460px;
-}
-
-.navigation-auto div{
-    border: 2px solid rgb(55, 245, 55);
-    padding: 5px;
-    transition: 1s;
-    border-radius: 10px;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background:rgb(55, 245, 55);
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background:rgb(55, 245, 55);
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background:rgb(55, 245, 55);
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background:rgb(55, 245, 55);
-}
-
-#radio5:checked ~ .navigation-auto .auto-btn5{
-    background:rgb(55, 245, 55);
-}
-
-/* slidebar end*/
-
-/* intro text */
-
-.intro {
-    display: none;
-}
-
-.intro.text-ger{
-    display: block;
-}
-
-.intro.text-en {
-    margin-top: 60px;
-    width: 100%;
-    background-color: rgb(58, 50, 50);
-    color: white;
-    border-radius:10px 10px 10px 10px;
-    padding: 10px; 
-    margin-bottom: 60px; 
-}
-
-.intro.text-ger {
-    margin-top: 60px;
-    width: 100%;
-    background-color: rgb(58, 50, 50);
-    color: white;
-    border-radius:10px 10px 10px 10px;
-    padding: 10px; 
-    margin-bottom: 60px; 
-}
-
-.intro-text p {
-    font-size: 20px;
-    
-}
-
-/* intro text end */
-
-
 /* map */
 
 #map {
     width: 100%;
     height: 846px;
 }
-
-
-/* jqvmap */
-
-/*.jqvmap-label
-{
-	position: absolute;
-	display: none;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background: #292929;
-	color: white;
-	font-family: sans-serif, Verdana;
-	font-size: smaller;
-	padding: 3px;
-}
-
-.jqvmap-zoomin, .jqvmap-zoomout
-{
-	position: absolute;
-	left: 10px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background: #000000;
-	padding: 3px;
-	color: white;
-	width: 10px;
-	height: 10px;
-	cursor: pointer;
-	line-height: 10px;
-	text-align: center;
-}
-
-.jqvmap-zoomin
-{
-	top: 10px;
-}
-
-.jqvmap-zoomout
-{
-	top: 30px;
-}
-
-.jqvmap-region
-{
-  cursor: pointer;
-}
-
-#vmap {
-    width: 70%;
-    height: 805px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* map pins */
-
-/*.map-pin {
-    width: 64px;
-    height: 50px;
-    position: absolute;
-    top: -25px;
-    left: -32px;
-    background-size: 32px 32px;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: top center;
-    color: #888;
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.map-pin span {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    left: 0;
-}
-
-.green {
-    background-image: url('images/green.png');
-}
-
-.jqvmap-pin {
-    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
-    cursor: default;
-}
-
-#jqvmap1_fl_pin {
-    margin-left: 5%;
-}
-/* map pins end */
-
-/* jqvmap end */
 
 /* main end */
 

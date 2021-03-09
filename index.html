@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
     <script src="burger.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>ForestSaver</title>
@@ -10,138 +11,81 @@
   <body>
     <!-- header -->
       <!-- navigation bar -->
-      <nav>
-        <div class="logo-div">
-          <a href="../index.html">
-            ForestSaver
-          <!--<img class="logo" src="images/logo.png" alt="logo">-->
-          </a>
-          
+      <div class="bg-img">
+        <div class="overlay">
+          <div class="nav-container">
+            <nav>
+              <div class="logo-div">
+                <a href="../index.html">
+                  &#127794;ForestSaver&#127795;
+                <!--<img class="logo" src="images/logo.png" alt="logo">-->
+                </a>
+                
+              </div>
+              <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+              </label>
+              <input type="checkbox" id="btn">
+              <ul class="navitems">
+                <li>
+                  <label for="btn-1" class="show">Allgemeines +</label>
+                  <a href="#">Allgemeines</a>
+                  <input type="checkbox" id="btn-1">
+                  <ul>
+                    <li><a href="general/causes.html">Ursachen</a></li>
+                    <li><a href="general/consequences.html">Konsequenzen</a></li>
+                    <li><a href="general/statistics.html">Statistiken</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <label for="btn-2" class="show">Projekte +</label>
+                  <a href="#">Projekte</a>
+                  <input type="checkbox" id="btn-2">
+                  <ul>
+                    <li><a href="projects/map.html">Karte</a></li>
+                    <li><a href="projects/gruenheide.html">Grünheide</a></li>
+                    <li><a href="projects/hambacherForst.html">Hambacher Forst</a></li>
+                    <li><a href="projects/dannenröderForst.html">Dannenröder Forst</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <label for="btn-3" class="show">Gegenmaßnahmen +</label>
+                  <a href="#">Gegenmaßnahmen</a>
+                  <input type="checkbox" id="btn-3">
+                  <ul>
+                    <li><a href="countermeasures/whatCanIDo.html">Was kann ich tun?</a></li>
+                    <li><a href="countermeasures/politicsEconomy.html">Politik/Wirtschaft</a></li>
+                    <li><a href="countermeasures/projects.html">Projekte</a></li>
+                  </ul>
+                </li>
+                <!--
+                <li class="langswitcher">
+                  <span class="ger">German</span>
+                  <input type="checkbox" class="check">
+                  <span class="en">English</span>
+                </li>
+                -->
+                <li>
+                  <label class="show">Kontakt</label>
+                  <a href="contact/contact.html">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <label for="btn" class="icon">
-          <span class="fa fa-bars"></span>
-        </label>
-        <input type="checkbox" id="btn">
-        <ul class="navitems">
-          <li>
-            <label for="btn-1" class="show">Allgemeines +</label>
-            <a href="#">Allgemeines</a>
-            <input type="checkbox" id="btn-1">
-            <ul>
-              <li><a href="general/causes.html">Ursachen</a></li>
-              <li><a href="general/consequences.html">Konsequenzen</a></li>
-              <li><a href="general/statistics.html">Statistiken</a></li>
-            </ul>
-          </li>
-          <li>
-            <label for="btn-2" class="show">Projekte +</label>
-            <a href="#">Projekte</a>
-            <input type="checkbox" id="btn-2">
-            <ul>
-              <li><a href="projects/map.html">Karte</a></li>
-              <li><a href="projects/gruenheide.html">Grünheide</a></li>
-              <li><a href="projects/hambacherForst.html">Hambacher Forst</a></li>
-              <li><a href="projects/dannenröderForst.html">Dannenröder Forst</a></li>
-            </ul>
-          </li>
-          <li>
-            <label for="btn-3" class="show">Gegenmaßnahmen +</label>
-            <a href="#">Gegenmaßnahmen</a>
-            <input type="checkbox" id="btn-3">
-            <ul>
-              <li><a href="countermeasures/whatCanIDo.html">Was kann ich tun?</a></li>
-              <li><a href="countermeasures/politicsEconomy.html">Politik/Wirtschaft</a></li>
-              <li><a href="countermeasures/projects.html">Projekte</a></li>
-            </ul>
-          </li>
-          <!--
-          <li class="langswitcher">
-            <span class="ger">German</span>
-            <input type="checkbox" class="check">
-            <span class="en">English</span>
-          </li>
-          -->
-          <li>
-            <label class="show">Kontakt</label>
-            <a href="contact/contact.html">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
+      
       <!-- navigation bar end -->
     <!-- header end -->
       
     <!-- main -->
     <div class="content">
-      <!-- image slider -->
-      <div class="slider">
-        <div class="slides"> 
-          <!-- radio buttons -->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <input type="radio" name="radio-btn" id="radio5">
-          <!-- radio buttons end -->
-
-          <!-- slide images -->
-          <div class="slide first">
-            <img src="images/wald1.jpg" alt="wald1">
-          </div>
-          <div class="slide">
-            <img src="images/wald2.jpg" alt="wald2">
-          </div>
-          <div class="slide">
-            <img src="images/wald3.jpg" alt="wald3">
-          </div>
-          <div class="slide">
-            <img src="images/wald4.jpg" alt="wald4">
-          </div>
-          <div class="slide">
-            <img src="images/wald5.jpg" alt="wald5">
-          </div>
-          <!-- slide images end -->
-
-          <!-- automatic navigation -->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            <div class="auto-btn5"></div>
-          </div>
-          <!-- automatic navigation end-->
-        </div>
-
-        <!-- manual navigation -->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-          <label for="radio5" class="manual-btn"></label>
-        </div>
-        <!-- manual navigation end -->
-      </div>
-      <!-- image slider end -->
-
-      <!-- intro text -->
-      <div class="intro text-ger">
-        <p>
-          Hier sehen Sie einen Beispieltext mit zweihundert Wörtern. Auf Texte mit diesen Umfang stoßen Sie im Web, wenn Sie beispielsweise eine Kurzmeldung lesen. Aber nicht nur als Kurzmeldungen eignen sich diese Texte. Sie werden sie auch als kürzere Produktbeschreibung in Onlineshops entdecken.  Meist verwenden Shopsysteme eine Kurzbeschreibung mit maximal 50 Wörtern. Ähnlich wie hier auf dieser Seite können Sie sehen, was ich meine. Nach der Einleitung wird es also etwas ausführlicher. Im eigentlichen Beschreibungsteil können Sie alle wichtigen Daten zu einem Produkt oder Dienstleistung reinbringen. Ähnlich wie hier auf dieser Seite können Sie sehen, was ich meine. Nach der Einleitung wird es also etwas ausführlicher. Im eigentlichen Beschreibungsteil können Sie alle wichtigen Daten zu einem Produkt oder Dienstleistung reinbringen.      
-        </p>
-      </div>
-      <div class="intro text-en">
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-      </div>
-      <!-- intro text end -->
     </div>
-    <script>
+    <!--<script>
       $('.icon').click(function(){
         $('span').toggleClass("cancel");
       });
-   </script>
+   </script>-->
     <!-- main end -->
 
     <!-- footer -->
