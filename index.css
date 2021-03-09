@@ -214,6 +214,9 @@ nav ul ul ul li{
       opacity: 1;
       visibility: visible;
     }
+    #map-nav ul ul li{
+        background-color: transparent;
+    }
     nav ul ul a{
       padding-left: 40px;
     }
@@ -231,6 +234,9 @@ nav ul ul ul li{
     }
     span.cancel:before{
       content: '\f00d';
+    }
+    .dropdown {
+        font-size: 13px;
     }
 }
 
