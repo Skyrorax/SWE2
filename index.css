@@ -28,25 +28,21 @@ body{
     background-position: center;
     position: relative;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     color: #FFFFFF;
-}
-
-.nav-container {
-    position: absolute;
-    width: 100%;
-    z-index: 3;
 }
 
 .overlay {
     background: linear-gradient(to top, rgba(80, 207, 137, 0.466), rgba(16, 116, 33, 0.5));
-    overflow: hidden;
+    overflow-x: hidden;
     height: 100%;
-    z-index: 2;
 }
 
 nav{
     background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 nav:after{
     content: '';
@@ -144,7 +140,7 @@ nav ul ul ul li{
       padding-left: 30px;
       width: 100%;
     }
-    .show + a, ul{
+    .show + a,.showC + a, ul{
       display: none;
     }
     nav ul li,nav ul ul li{
@@ -161,6 +157,9 @@ nav ul ul ul li{
       padding: 0 20px;
       line-height: 70px;
       cursor: pointer;
+    }
+    #contactNav {
+        margin-left: 8px;
     }
     .show:hover{
       color: rgb(84, 236, 89);
@@ -271,8 +270,6 @@ language switcher end */
 
 /* header end */
 
-/* main */
-
 /* map */
 
 #map {
@@ -280,18 +277,49 @@ language switcher end */
     height: 850px;
 }
 
-/* main end */
+/* map end */
+
+/* intro text */
+
+.text-container {
+    margin-top: 30vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.text-container h1{
+    margin-bottom: 30px;
+}
+
+.text-container p{
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+}
+/* intro text end */
 
 /* footer */
+
+.bg-img footer {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.3);
+    color:white;
+    justify-content: center;
+    width: 100%;
+}
 
 footer{
     display: flex;
     padding: 10px;
     background-color: rgb(58, 50, 50);
     color:white;
-    margin-top: auto;
     justify-content: center;
     width: 100%;
+    z-index: 3;
 }
 
 /* footer end*/
