@@ -26,4 +26,16 @@ function deactivateOtherSubmenus() {
         default:
             break;
     }
+    setDropdownArrow(btn1, 'dropdown1');
+    setDropdownArrow(btn2, 'dropdown2');
+    setDropdownArrow(btn3, 'dropdown3');
+}
+
+function setDropdownArrow(btn, dropdownId) {
+    if (btn.checked == true) {
+        document.getElementById(dropdownId).innerText = "\u25BC";
+    }
+    else {
+        document.getElementById(dropdownId).innerText = "\u25BA";
+    }
 }
