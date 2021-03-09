@@ -42,7 +42,7 @@ nav{
     background: transparent;
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 nav:after{
     content: '';
@@ -132,6 +132,9 @@ nav ul ul ul li{
     margin-left: 40px;
 }
 @media all and (max-width: 1000px) {
+    nav {
+        background-color: rgba(0,0,0,0.5);
+    }
     nav ul{
       margin-right: 0px;
       float: left;
@@ -319,7 +322,7 @@ footer{
     color:white;
     justify-content: center;
     width: 100%;
-    z-index: 3;
+    z-index: 2;
 }
 
 /* footer end*/
