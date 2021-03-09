@@ -45,7 +45,8 @@ body{
 }
 
 .overlay {
-    background: linear-gradient(to top, rgba(80, 207, 137, 0.466), rgba(16, 116, 33, 0.5)) fixed;
+    background: linear-gradient(to top, rgba(80, 207, 137, 0.466), rgba(16, 116, 33, 0.5));
+    position: absolute;
     overflow-x: hidden;
     height: 100%;
     width: 100%;
