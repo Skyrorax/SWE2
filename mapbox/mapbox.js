@@ -17,7 +17,7 @@ map.on('load', () => {
                      "properties": {
                            "head": "Hambacher Forst",
                            "text": "Beispieltext 3",
-                           "link" : "../index.html",
+                           "link" : "../projects/hambacherForst.html",
                            "site": "Hier",
                            "img": "../images/hambacher_forst.jpg",
                      },
@@ -34,7 +34,7 @@ map.on('load', () => {
                         "properties": {
                               "head": "Tesla Grünheide",
                               "text": "Beispieltext 2",
-                              "link" : "../index.html",
+                              "link" : "../projects/gruenheide.html",
                               "site": "Hier",
                               "img": "../images/tesla_gruenheide.jpg",
                         },
@@ -51,7 +51,7 @@ map.on('load', () => {
                               "properties": {
                                     "head": "Dannenröder Forst",
                                     "text": "Beispieltext 1",
-                                    "link" : "../index.html",
+                                    "link" : "../projects/dannenröderForst.html",
                                     "site": "Hier",
                                     "img": "../images/dannenroeder_forst.jpg",
                               },
