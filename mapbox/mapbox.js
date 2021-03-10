@@ -89,7 +89,7 @@ map.on('click', e => {
             const img = result[0].properties.img;
             const alt = result[0].properties.alt
             popup.setLngLat(e.lngLat)
-               .setHTML(`<h1>${head}</h1><p><img src="${img}" alt=""></p><p>${text}</p><a href="${link}">${site}</a> kommen sie auf die Projekt-Seite`)
+               .setHTML(`<h1>${head}</h1><p><img src="${img}" alt=""></p><p><a href="${link}">${site}</a> kommen sie auf die Projekt-Seite</p>`)
                .addTo(map)
       }
 });
