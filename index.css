@@ -19,7 +19,7 @@ body{
 
 /* background */
 
-.bg-img, .bg-img-causes, .bg-img-consequences, .bg-img-statistics {
+.bg-img, .bg-img-causes, .bg-img-consequences, .bg-img-statistics, .bg-img-dannenroeder, .bg-img-gruenheide, .bg-img-hambacher {
     background-size: cover;
     background-position: center;
     position: relative;
@@ -42,6 +42,18 @@ body{
 
 .bg-img-statistics {
     background: url(./images/statistics.jpg) 0 0 no-repeat fixed;
+}
+
+.bg-img-dannenroeder {
+    background: url(./images/dannenroeder_forst_bg.jpg) 0 0 no-repeat fixed;
+}
+
+.bg-img-gruenheide {
+    background: url(./images/tesla_gruenheide_bg.jpg) 0 0 no-repeat fixed;
+}
+
+.bg-img-hambacher {
+    background: url(./images/hambacher_forst_bg.jpg) 0 0 no-repeat fixed;
 }
 
 .overlay {
