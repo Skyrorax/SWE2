@@ -19,7 +19,7 @@ body{
 
 /* background */
 
-.bg-img, .bg-img-causes, .bg-img-consequences, .bg-img-statistics, .bg-img-dannenroeder, .bg-img-gruenheide, .bg-img-hambacher {
+.bg-img, .bg-img-causes, .bg-img-consequences, .bg-img-statistics, .bg-img-dannenroeder, .bg-img-gruenheide, .bg-img-hambacher, .bg-img-whatcanido, .bg-img-politics_economy, .bg-img-projects {
     background-size: cover;
     background-position: center;
     position: relative;
@@ -54,6 +54,18 @@ body{
 
 .bg-img-hambacher {
     background: url(./images/hambacher_forst_bg.jpg) 0 0 no-repeat fixed;
+}
+
+.bg-img-whatcanido {
+    background: url(./images/whatcanido_bg.jpg) 0 0 no-repeat fixed;
+}
+
+.bg-img-politics_economy {
+    background: url(./images/politics_economy_bg.jpg) 0 0 no-repeat fixed;
+}
+
+.bg-img-projects {
+    background: url(./images/projects_bg.jpg) 0 0 no-repeat fixed;
 }
 
 .overlay {
