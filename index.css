@@ -401,20 +401,25 @@ language switcher end */
 /* intro text */
 
 .text-container {
-    margin-top: 35vh;
+    margin-top: 30vh;
     margin-left: 15vw;
     margin-right: 15vw;
 }
 
 .text-container h1{
     margin-bottom: 30px;
+    color: white;
+    font-size: 50px;
+    margin-left: 15%;
 }
 
 .text-container p{
     color: white;
     font-size: 27px;
     font-weight: 600;
+    margin-left: 15%;
 }
+
 /* intro text end */
 
 /* footer */
