@@ -19,6 +19,15 @@ body{
 
 /* background */
 
+.bg-video {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bg-img, .bg-img-causes, .bg-img-consequences, .bg-img-statistics, .bg-img-dannenroeder, .bg-img-gruenheide, .bg-img-hambacher, .bg-img-whatcanido, .bg-img-politics_economy, .bg-img-projects {
     background-size: cover;
     background-position: center;
@@ -68,23 +77,15 @@ body{
     background: url(./images/projects_bg.jpg) 0 0 no-repeat fixed;
 }
 
-.overlay-green, .overlay-grey, .overlay-yellow {
+.overlay-dark {
     position: absolute;
     overflow-x: hidden;
     height: 100%;
     width: 100%;
 }
 
-.overlay-green {
-    background: linear-gradient(to top, rgba(121, 202, 158, 0.466), rgba(16, 116, 33, 0.5));
-}
-
-.overlay-grey {
-    background: linear-gradient(to top, rgba(163, 159, 159, 0.466), rgba(46, 46, 46, 0.5));
-}
-
-.overlay-yellow {
-    background: linear-gradient(to top, rgba(179, 168, 106, 0.466), rgba(70, 58, 12, 0.5));
+.overlay-dark {
+    background: linear-gradient(to top, rgba(189, 189, 189, 0.1), rgba(10, 10, 10, 0.65));
 }
 
 /* background */
@@ -400,7 +401,7 @@ language switcher end */
 /* intro text */
 
 .text-container {
-    margin-top: 30vh;
+    margin-top: 35vh;
     margin-left: 15vw;
     margin-right: 15vw;
 }
