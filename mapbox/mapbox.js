@@ -32,7 +32,7 @@ map.on('load', () => {
                    {
                         "type": "Feature",
                         "properties": {
-                              "head": "Tesla Grünheide",
+                              "head": "Grünheide",
                               "text": "Beispieltext 2",
                               "link" : "../projects/gruenheide.html",
                               "site": "Hier",
