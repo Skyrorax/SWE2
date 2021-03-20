@@ -5,7 +5,6 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: rgb(61, 74, 93);
     overflow-x: hidden;
 }
 
@@ -29,63 +28,60 @@ body{
 }
 
 .bg-img, .bg-img-causes, .bg-img-consequences, .bg-img-statistics, .bg-img-dannenroeder, .bg-img-gruenheide, .bg-img-hambacher, .bg-img-whatcanido, .bg-img-politics_economy, .bg-img-projects {
+    height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 100vh;
     overflow-x: hidden;
     color: #FFFFFF;
 }
 
 .bg-img {
-    background: url(./images/wald-bg.jpg) 0 0 no-repeat fixed;
+    background: url(./images/wald-bg.jpg) 50% 50% no-repeat fixed;
 }
 
 .bg-img-causes {
-    background: url(./images/wald2.jpg) 0 0 no-repeat fixed;
+    background: url(./images/wald2.jpg) 50% 50% no-repeat fixed;
 }
 
 .bg-img-consequences {
-    background: url(./images/consequences.jpg) 0 0 no-repeat fixed;
+    background: url(./images/consequences.jpg) 50% 50% no-repeat fixed;
 }
 
 .bg-img-statistics {
-    background: url(./images/statistics.jpg) 0 0 no-repeat fixed;
+    background: url(./images/statistics.jpg) 50% 50% no-repeat fixed;
 }
 
 .bg-img-dannenroeder {
-    background: url(./images/dannenroeder_forst_bg.jpg) 0 0 no-repeat fixed;
+    background: url(./images/dannenroeder_forst_bg.jpg) 50% 50% no-repeat fixed;
 }
 
 .bg-img-gruenheide {
-    background: url(./images/tesla_gruenheide_bg.jpg) 0 0 no-repeat fixed;
+    background: url(./images/tesla_gruenheide_bg.jpg) 50% 50% no-repeat fixed;
 }
 
 .bg-img-hambacher {
-    background: url(./images/hambacher_forst_bg.jpg) 0 0 no-repeat fixed;
+    background: url(./images/hambacher_forst_bg.jpg) 50% 50% no-repeat fixed;
 }
 
 .bg-img-whatcanido {
-    background: url(./images/whatcanido_bg.jpg) 0 0 no-repeat fixed;
+    background: url(./images/whatcanido_bg.jpg) 50% 50% no-repeat fixed;
 }
 
 .bg-img-politics_economy {
-    background: url(./images/politics_economy_bg.jpg) 0 0 no-repeat fixed;
+    background: url(./images/politics_economy_bg.jpg) 85% 15% no-repeat fixed;
 }
 
 .bg-img-projects {
-    background: url(./images/projects_bg.jpg) 0 0 no-repeat fixed;
-}
-
-.overlay-dark {
-    position: absolute;
-    overflow-x: hidden;
-    height: 100%;
-    width: 100%;
+    background: url(./images/projects_bg.jpg) 50% 50% no-repeat fixed;
 }
 
 .overlay-dark {
     background: linear-gradient(to top, rgba(189, 189, 189, 0.1), rgba(10, 10, 10, 0.65));
+    position: absolute;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 /* background */
